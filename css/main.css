@@ -1,0 +1,363 @@
+/* ---------------------Navbar decoration------------------ */
+.navBar {
+  background-color: #EBD3E2;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* NAVBAR TEXT */
+.navText {
+    color: black;
+    font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Links inside the navbar */
+.navBar li, .dropdown {
+  float: left;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+}
+
+/* Add a background color to navbar links on hover */
+.navBar li:hover {
+    transform: scale(1.1);
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #EBD3E2;
+  min-width: 200px;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu li{
+  float: none;
+  padding: 10px 0px;
+  text-decoration:none;
+  display: block;
+  text-align: center;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-menu li a:hover {
+  background-color: #EBD3E2;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -3%;
+    margin-left: -15%;
+}
+
+.show {
+    display: block;
+}
+
+/* This code puts the collapse navbar button in the middle */
+.navbar-toggle {
+  float: none;
+  margin-left: 46%;
+}
+/*------------------------- END OF NAVBAR DECORATION ------------------------------------------*/
+
+
+.name, .aboutMe, .contactMe, .beauty {
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.nameHeader, .aboutMeHeader, .contactMeHeader, .beautyHeader, .instagramHeader, .blogsHeader, .myInstagram {
+    font-size: 1.7em;
+    text-align: center;   
+}
+/* ---------------------------------------- */
+
+
+/* DECORATION OF "MY BLOGS" */
+.blogs, .instagram {
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.blogs {
+    padding-bottom: 2%;
+}
+
+.fashionBlogs {
+    padding-bottom: 5%;
+}
+
+.myBlogs, .myInstagram, .myRecentBlogs {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.myRecentBlogs, .myBlogs {
+    padding-bottom: 5%;
+}
+
+.centered {
+    text-align: center;
+    background-color: rgba(235, 211, 226, 0.66);
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 30%;
+}
+/* ------------------------- */
+
+
+span {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.aboutText, .contactMeText, .blogsText {
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/* ------------------SOME CSS FOR THE FOOTER OF THE ALL PAGES--------------------- */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    background-color: #EBD3E2;   
+}
+
+.footer p {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    margin-top: 1%;
+    font-size: 1.1em;
+    text-align: center;
+}
+/* --------------- END OF FOOTER DECORATION --------------------------- */
+
+
+
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+.social {
+    float: right;
+}
+.socialIcon:hover {
+    transform: scale(2);
+}
+
+
+
+
+/* Making All IMG tags Responsive */
+img {
+    width: 100%;
+    height: auto;
+}
+/* ------------------------------ */
+
+i {
+    color: black;
+}
+
+
+/*To keep the navbar collapsed on less or equal to 1200px screens size*/
+   @media (max-width: 1000px) {
+     .navbar-header {
+          float: none;
+      }
+
+     .navbar-toggle {
+          display: block;
+      }
+
+     .navbar-collapse {
+          border-top: 1px solid transparent;
+          box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+
+     .navbar-collapse.collapse {
+          display: none!important;
+      }
+
+     .navbar-collapse.collapse.in {
+          display: block !important; 
+      }
+
+     .navbar-nav {
+          float: none!important;
+          margin: 7.5px -15px;
+      }
+
+     .navbar-nav > li {
+          float: none;
+      }
+
+     .navbar-nav > li > a {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+  }
+/*----------------------------------------------------------------------------*/
+
+
+.MillieImage{
+    width: 60%;
+    height: 25%;
+    margin-left: 20%;
+}
+
+hr {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+.pixlee_container {
+    height: 50%;
+}
+
+/* ------------------------ THE SIGNITURE AFTER EVERY BLOG POST ------------------- */
+.signiture {
+    width: 30%;
+    height: 20%;
+    padding-bottom: 5%;
+}
+/* ------------------------ END OF THE SIGNITURE AFTER EVERY BLOG POST ------------------- */
+
+.rightSide{
+    border-radius: 30%;
+}
+
+.myInstagram {
+    margin-top: -3%;
+    text-align: center;
+}
+.instagram {
+    padding-top:3%;
+}
+
+
+/* ---------------------------------HOVER EFFECT -------------------------------- */
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Wobble To Bottom Right */
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-to-bottom-right:hover, .hvr-wobble-to-bottom-right:focus, .hvr-wobble-to-bottom-right:active {
+  -webkit-animation-name: hvr-wobble-to-bottom-right;
+  animation-name: hvr-wobble-to-bottom-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* --------------------------- END OF HOVER EFFECT ------------------------------------- */
+
+
+
